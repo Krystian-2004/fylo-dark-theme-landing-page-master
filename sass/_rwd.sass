@@ -1,0 +1,217 @@
+@media screen and (max-width: 1440px)
+    .footer
+        .footer-container
+            .footer-row
+                .fast-link
+                    width: auto
+                    a
+                        width: 100%
+
+@media screen and (max-width: 1024px)
+
+    // Start Main Section 
+    main
+        .development // Start About Us Section
+            .box
+                margin-top: 100px
+        .about-us-section // Start About Us Section
+            .box-about-us
+                flex-direction: column
+                .col-about-us
+                    margin: 35px 0 0 50px
+                    // END About Us Seciton 
+                // END Main Section 
+    .quote-section //Start Quote Section
+        flex-direction: column
+        align-items: center
+        .box-quote
+            width: 80%
+            min-height: 175px
+            margin-bottom: 30px
+            padding: 0 0 20px 25px
+            .inside-box-quote
+                width: 90%
+        .quote
+            transform: translate(92px, -35px)
+    // END Quote Section 
+    //Start Get Early Accesss
+    .get-early-access
+        width: calc(100% + 50px)
+        margin-top: 0
+        .box-early-access
+            min-height: 340px
+    // END Get Early Access 
+    // Start Footer Section
+    .footer
+        min-height: 530px
+        .footer-container
+            margin: 0 77px
+            padding-top: 100px
+    // END Footer Section
+
+@media screen and (max-width: 790px)
+    // Start nav
+    nav
+        ul
+            width: 40%
+
+    .intro-bg
+        height: 100vh
+        background-image: url("../images/bg-curvy-mobile.svg")
+
+    main
+        width: 100%
+        .development //Start Development Section
+            flex-direction: row
+            // margin-top: 150px
+            .box
+                width: 45%
+                margin-top: 100px
+                padding: 15px
+                .content-development
+                    width: 100%
+        // END Development Section 
+        // Start About Us Sectin 
+        .about-us-section
+            margin-top: 150px
+            .about-us-img
+                width: 100%
+                .col-about-us
+                    margin-left: 0
+                    h2
+                        width: 100%
+                        margin-top: 40px
+                        font-size: 20px
+                        letter-spacing: 0
+                    p
+                        width: 100%
+        // END About Us Section 
+    // END Main
+    .quote-section // Start Quote Section
+        .box-quote
+            .inside-box-quote
+                width: 100%
+        .quote
+            transform: translate(70px, -35px)
+        // END Quote Section 
+    //Start Get Early Access
+    .get-early-access
+        .box-early-access
+            h2
+                font-size: 32px
+                // padding: 0px 0 15px 0
+            p
+                width: 80%
+                font-size: 16px
+            form
+                flex-direction: column
+                input[type=email]
+                    width: 100%
+                button[type=submit]
+                    margin: 20px 0 0 0
+                    width: 100%
+                .error-message
+                    height: 32px
+
+                .error-message p
+                    line-height: 32px !important
+    //END Get Early Access
+    // Start Footer 
+    .footer
+        min-height: 850px
+        .footer-container
+            width: 80%
+            margin: auto
+            padding: 175px 0 0 0
+            transform: translate(0, 0)
+            .footer-logo
+                width: 60%
+                margin-top: 50px
+            .footer-col-mobile
+                +flex-box(flex-start, flex-start, column)
+                .footer-desc
+                    width: 100%
+                    line-height: 20px
+                    margin-bottom: 20px
+                    .footer-icon
+                        margin-right: 25px
+                .fast-link
+                    width: 25%
+                    margin-top: 35px
+                .social-media
+                    margin: auto
+                    padding: 50px 0
+    // END Footer 
+
+@media screen and (max-width: 425px)
+    // Start Nav 
+    nav
+        padding: 30px 15px 20px
+        .logo
+            width: 30%
+            img
+                width: 100%
+        ul
+            width: 50%
+            justify-content: space-between
+    // END Nav  
+
+    // Start Header 
+    header
+        .header-box
+            h1
+                font-size: 27px
+                letter-spacing: 0px
+            p
+                width: 100%
+                margin: 30px 0 50px
+        .btn-started
+            width: 75%
+
+    .intro-bg
+        height: 85vh
+        background-image: url("../images/bg-curvy-mobile.svg")
+    // END Header
+    // Start Main Section
+    main
+        .development
+            flex-direction: column
+            .box
+                width: 100%
+    // END Main Section
+    // Start Quote Section 
+    .quote-section
+        .box-quote
+            width: 100%
+            min-height: 200px
+            .inside-box-quote
+                .paragraph-quote
+                    margin-bottom: 15px
+                    line-height: 25px
+                    width: 90%
+        .quote
+            width: 10%
+            transform: translate(10px, -23px)
+            img
+                width: 100%
+    // END Quote Section
+    // Start Get Early Access 
+    .get-early-access
+        .box-early-access
+            h2
+                font-size: 21px
+    // END Get Early Access  
+
+@media screen and (max-width: 375px)
+    // Start Nav 
+    nav
+        ul
+            width: 55%
+    // END Nav 
+    // Start Quote Section 
+    .quote-section
+        .box-quote
+            padding: 0 0 10px 25px
+        .quote
+            transform: translate(10px, -20px)
+    // END Quote 

@@ -1,0 +1,331 @@
+*
+    +reset-line(0, 0)
+a
+    color: $deafult-color
+    text-decoration: none
+p
+    color: $paragraph-color
+body
+    font-size: $deafult-fz
+    color: $deafult-color  
+    font-family: 'Raleway', sans-serif
+    background-color: hsl(218, 29%, 13%)
+    &::-webkit-scrollbar 
+        width: 1em
+        background-color: hsl(219, 30%, 18%)
+    &::-webkit-scrollbar-thumb
+        background-color: #0f1928
+
+// Start Nav 
+nav
+    position: relative
+    z-index: 1
+    width: 100%
+    +flex-box(space-between, center, row)
+    padding: 30px 40px 20px
+    ul
+        width: 20%
+        +flex-box(space-around, center, row)
+        list-style-type: none
+        li
+            a
+                position: relative
+                display: block
+                padding: 5px 5px
+                color: $paragraph-color
+                span
+                    width: 0
+                    height: 2px
+                    position: absolute
+                    bottom: 0
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    background-color: $deafult-color
+                    border-radius: 10px
+                    transition: width .3s linear 0s, color .2s linear
+                &:hover
+                    span
+                        width: 100%
+                        cursor: pointer
+                    color: $deafult-color
+                    // END Nav 
+.container
+    width: 80%
+    +flex-box(flex-start, center, column)
+    margin: auto
+// Header 
+header
+    min-height: calc(100vh - 105px)
+    z-index: 1
+    text-align: center
+    .header-box
+        max-width: 650px
+        img
+            width: 100%
+        h1
+            margin-top: 25px
+            font-size: 35px
+            letter-spacing: 1px
+        p
+            width: 75%
+            margin: 30px auto 50px
+            letter-spacing: 1px
+            line-height: 25px
+    .btn-started
+        display: block
+        width: 35%
+        margin: auto
+        padding: 15px 50px
+        background-color: hsl(198, 60%, 50%)
+        border-radius: 50px
+        box-shadow: 0 7px 3px -7px #000
+        font-weight: 700
+        letter-spacing: 1px
+        transition: background-color .3s linear 0s
+        &:hover
+            background-color: hsl(176, 68%, 64%)
+            cursor: pointer
+
+.intro-bg
+    position: absolute
+    width: 100%
+    height: 125vh
+    top: 0
+    left: 0
+    background: hsl(217, 28%, 15%)
+    background-image: url("../images/bg-curvy-desktop.svg")
+    background-position: center bottom
+    background-repeat: no-repeat
+    background-size: contain
+
+// END Header 
+
+
+main 
+    z-index: 1
+    .development  //Start Development 
+        width: 100%
+        min-height: 60vh
+        +flex-box(space-around, center, row)
+        flex-wrap: wrap
+        .box
+            width: 50%
+            .content-development
+                width: 55%
+                margin: auto
+                +flex-box(normal, center, column)
+                text-align: center
+                .img-box
+                    margin-bottom: 20px
+                h2
+                    margin-bottom: 10px
+                p
+                    line-height: 20px  //END Development
+    .about-us-section //Start About Us
+        margin-top: 100px
+        .box-about-us
+            +flex-box(center, center, row)
+            .col-about-us
+                +flex-box(center, flex-start, column)
+                margin-left: 50px
+                h2
+                    font-size: 30px
+                    width: 50%
+                    letter-spacing: 1px
+                    margin-bottom: 25px
+                p
+                    margin-bottom: 25px
+                    width: 80%
+                    line-height: 20px
+                a
+                    position: relative
+                    color: hsl(176, 68%, 64%)
+                    transition: color .2s linear 0s
+                    .about-us-img
+                        vertical-align: middle
+                        transition: filter  .2s linear 0s
+                    &::before
+                        content: ''
+                        position: absolute
+                        width: 100%
+                        height: 2%
+                        bottom: 0
+                        left: 0
+                        background-color: hsl(176, 68%, 64%)
+                        transition: background-color .2s linear 0s
+                    &:hover
+                        color: $paragraph-color
+                        .about-us-img
+                            filter: grayscale(100%)
+                        &::before
+                            background-color: $paragraph-color
+
+                            // END About Us 
+// Start Quote Section
+.quote-section
+    position: relative
+    width: 100%
+    +flex-box(space-between, normal, row)
+    margin-top: 200px 
+    .box-quote
+        width: 30%
+        min-height: 200px
+        +flex-box(flex-start, flex-end, row)
+        background-color: hsl(219, 30%, 18%)
+        box-shadow: 5px 5px 10px -8px #333
+        padding: 0 0 30px 25px
+        z-index: 1
+        .inside-box-quote
+            .paragraph-quote
+                margin-bottom: 25px
+                line-height: 20px
+            .personal-data-box
+                +flex-box(flex-start, center, row)
+                .avatar
+                    img
+                        width: 35px
+                        border-radius: 50%
+                .personal-data
+                    margin-left: 15px
+                    p
+                        font-weight: 700
+                        font-size: 12px
+                        color: $deafult-color
+                        line-height: 16px
+                        &:nth-child(2)
+                            font-weight: 400
+                            font-size: 9px
+                            color: $paragraph-color
+    .quote
+        position: absolute
+        top: 0
+        left: 0
+        transform: translate(-10px, -35px)
+// END Quote Section 
+
+// Start Get Early Access
+.error-message
+    width: 100%
+    height: 30px
+    position: absolute
+    bottom: 0
+    left: 0
+    transform: translate(0px, 100%)
+    p
+        padding-left: 25px
+        text-align: left !important
+        color: #ff4242
+        font-weight: 700
+        font-size: 11px
+        letter-spacing: 1px
+        line-height: 30px !important
+
+.get-early-access
+    width: 65%
+    margin-top: 100px
+    transform: translate(0, 50%)
+    z-index: 2
+    .box-early-access
+        min-height: 250px
+        +flex-box(center, center, column)
+        background-color: hsl(217, 28%, 15%)
+        border-radius: 10px
+        h2
+            font-size: 32px
+            padding-bottom: 25px
+        p
+            text-align: center
+            width: 70%
+            line-height: 20px
+        form
+            position: relative
+            width: 80%
+            +flex-box(space-between, center, row)
+            padding-top: 25px
+            input[type=email]
+                width: 70%
+                height: 50px
+                padding-left: 25px
+                border-radius: 25px
+                border: none
+            button[type=submit]
+                width: 25%
+                height: 50px
+                border-radius: 25px
+                border: none
+                background-color: hsl(198, 60%, 50%)
+                color: $deafult-color
+                font-weight: 700
+                cursor: pointer
+                transition: background-color .2s linear 0s
+                &:hover
+                    background-color: hsl(176, 68%, 64%)
+
+// END Get Arly Access Section
+// Start Footer 
+.footer 
+    position: relative
+    min-height: 450px
+    background-color: hsl(216, 53%, 9%)
+    .footer-container
+        +flex-box(center, flex-start, column)
+        padding-top: 50px
+        margin: 0 150px
+        transform: translate(0px, 125px)
+        .footer-logo
+            img
+                width: 65%
+        .footer-row
+            width: 100%
+            +flex-box(space-between, flex-start, row)
+            margin-top: 45px
+            .footer-desc
+                width: 30%
+                +flex-box(normal, flex-start, row)
+            .fast-link
+                width: 6%
+                +flex-box(flex-start, space-between, column)
+                a
+                    padding: 5px 0
+                    margin-bottom: 10px
+                    color: $paragraph-color
+                    &:hover
+                        color: $deafult-color
+                        font-weight: 700
+            .social-media
+                width: 150px
+                +flex-box(space-between, center, row)
+                div
+                    width: 35px
+                    height: 35px
+                    border: 1px solid $paragraph-color
+                    border-radius: 50%
+                    transition: border .2s linear 0s
+                    a
+                        display: block
+                        text-align: center
+                        line-height: 35px
+                        border-radius: 50%
+                        font-size: 14px
+                        transition: color .2s linear 0s
+                    &:hover
+                        border: 1px solid hsl(176, 68%, 64%)
+                        a
+                            color: hsl(176, 68%, 64%)
+    .copy
+        transform: translate(-50%, 0%)
+        position: absolute
+        bottom: 0
+        left: 50%
+        width: 100%
+        height: 35px
+        line-height: 35px
+
+.footer-icon
+    vertical-align: middle
+    margin-right: 15px
+
+.paragraph-margin
+    margin-bottom: 20px
+
+    // END Footer 
