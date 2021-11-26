@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd/hub/fylo-dark-theme-flexbox-sass-semantic-html-5-markup-rwd-vMTEPXneN)
+- Live Site URL: [Live Demo](https://krystian-2004.github.io/fylo-dark-theme-landing-page-master/)
 
 ## My process
 
